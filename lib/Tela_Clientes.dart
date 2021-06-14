@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class TelaSecundaria extends StatefulWidget {
-  const TelaSecundaria({Key? key}) : super(key: key);
+class Tela_Clientes extends StatefulWidget {
+  const Tela_Clientes({Key? key}) : super(key: key);
 
   @override
-  _TelaSecundariaState createState() => _TelaSecundariaState();
+  _Tela_ClientesState createState() => _Tela_ClientesState();
 }
 
-class _TelaSecundariaState extends State<TelaSecundaria> {
+class _Tela_ClientesState extends State<Tela_Clientes> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tela Secundária"),
+        title: Text("Tela Clientes"),
         backgroundColor: Colors.blue,
       ),
       body: Container(
@@ -23,6 +23,6 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
           ],
         ),
       ),
-    );;
+    );
   }
 }
