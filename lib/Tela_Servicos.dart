@@ -18,6 +18,7 @@ class _Tela_ServicosState extends State<Tela_Servicos> {
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
               Row(
                 children: <Widget>[
@@ -28,7 +29,13 @@ class _Tela_ServicosState extends State<Tela_Servicos> {
                       fontWeight: FontWeight.bold,
                   ),),)
                 ],
-              )
+              ),
+            Padding(padding: EdgeInsets.only(top: 15),
+            child: Text("Consultoria"),),
+            Padding(padding: EdgeInsets.only(top: 15),
+              child: Text("Cálculo de Preços"),),
+            Padding(padding: EdgeInsets.only(top: 15),
+              child: Text("Acompanhamento de Projetos"),)
           ],
         ),
       ),
