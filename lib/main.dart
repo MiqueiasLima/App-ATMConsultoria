@@ -30,28 +30,28 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
         padding: EdgeInsets.only(top: 50,bottom: 50,right: 30,left: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(5),
               child: Image.asset("imagens/logo.png"),
             ),
+
+          Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset("imagens/menu_empresa.png"),
+                  Image.asset("imagens/menu_servico.png"),
+                ],
+              ),
+
             Row(
-              children: <Widget>[
-
-              ],
-            ),
-
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => TelaSecundaria()
-                )
-              );
-            }, child: Text("Tela Secundária"),
-            style: ElevatedButton.styleFrom(
-              onPrimary: Colors.white,
-              primary: Colors.blue,
-              padding: EdgeInsets.all(16)
-            ),)
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset("imagens/menu_cliente.png"),
+                  Image.asset("imagens/menu_contato.png"),
+                ],
+              ),
           ],
         ),
       ),
