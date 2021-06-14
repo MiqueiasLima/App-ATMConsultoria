@@ -16,13 +16,14 @@ class _Tela_ClientesState extends State<Tela_Clientes> {
         backgroundColor: Colors.blue,
       ),
       body: Container(
-        padding: EdgeInsets.all(32),
+        padding: EdgeInsets.all(8),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
 
-          ],
-        ),
-      ),
+                  ],
+                ),
+              ),
     );
   }
 }

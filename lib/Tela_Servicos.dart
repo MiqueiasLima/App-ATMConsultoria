@@ -12,17 +12,26 @@ class _Tela_ServicosState extends State<Tela_Servicos> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Menu Empresa"),
+        title: Text("Menu Servicos"),
         backgroundColor: Colors.blue,
       ),
       body: Container(
-        padding: EdgeInsets.all(32),
+        padding: EdgeInsets.all(16),
         child: Column(
           children: <Widget>[
-
+              Row(
+                children: <Widget>[
+                  Image.asset("imagens/detalhe_servico.png"),
+                  Padding(padding: EdgeInsets.only(left: 10),
+                  child: Text("Nossos Servicos",style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                  ),),)
+                ],
+              )
           ],
         ),
       ),
-    );;;
+    );
   }
 }

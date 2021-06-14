@@ -59,12 +59,12 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 GestureDetector(
-                  onTap: _menu_empresa,
+                  onTap: () => _menu_empresa(),
                   child: Image.asset("imagens/menu_empresa.png"),
                 ),
 
                 GestureDetector(
-                  onTap: () => _menu_servico,
+                  onTap: () => _menu_servico(),
                   child:Image.asset("imagens/menu_servico.png") ,
                 )
               ],
@@ -73,12 +73,12 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 GestureDetector(
-                  onTap: () => _menu_cliente,
+                  onTap: _menu_cliente,
                   child: Image.asset("imagens/menu_cliente.png") ,
                 ),
 
                 GestureDetector(
-                  onTap: () => _menu_contato,
+                  onTap: _menu_contato,
                   child: Image.asset("imagens/menu_contato.png"),
                 ),
               ],
